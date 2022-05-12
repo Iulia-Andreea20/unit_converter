@@ -68,7 +68,6 @@ input::-webkit-inner-spin-button {
 }
 
 #error-message {
-    /* width: 200px; */
     color: #1F2937;
     font-size: 20px;
     margin: 80px;
