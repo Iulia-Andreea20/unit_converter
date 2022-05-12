@@ -1,6 +1,7 @@
 html,
 body {
     margin: 0px;
+    background-color: #1F2937;
 }
 
 .hero {
@@ -22,6 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #input-section {
@@ -71,4 +73,29 @@ input::-webkit-inner-spin-button {
     color: #1F2937;
     font-size: 20px;
     margin: 80px;
+}
+
+/* footer {
+    background: #1F2937;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+}
+
+.small-width {
+    width: 55px;
+}
+
+.logos {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+}
+*/
+@media print {
+    .operations {
+        page-break-after: always;
+    }
 }
