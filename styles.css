@@ -1,0 +1,59 @@
+html,
+body {
+    margin: 0px;
+}
+
+.hero {
+    height: 400px;
+    background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.operations {
+
+    height: 550px;
+    background: #1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-section {
+    font-size: 100px;
+    background: transparent;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    text-align: center;
+
+}
+
+.individual-operation {
+
+    margin: 20px 0px;
+    color: white;
+    width: 400px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #D2D2D2;
+}
+
+::placeholder {
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
