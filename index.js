@@ -4,6 +4,7 @@ const lengthOperation = document.getElementById("length-operation");
 const volumeOperation = document.getElementById("volume-operation");
 const massOperation = document.getElementById("mass-operation");
 const inputSection = document.getElementById("input-section");
+const errorMessage = document.getElementById("error-message");
 
 
 lengthOperation.textContent = `${main_value} meters = ${metersToFeet()} feet | ${main_value} feet = ${feetToMeters()} meters`;
@@ -36,10 +37,14 @@ function poundsToKillos() {
 }
 
 inputSection.addEventListener("keydown", function (e) {
-    if (e.key === "Enter") {
-        main_value = inputSection.value;
+    if (e.key === "Enter" && inputSection.value[0] !== "-") {
+        errorMessage.textContent = "";
+        main_value = Number(inputSection.value);
         lengthOperation.textContent = `${main_value} meters = ${metersToFeet()} feet | ${main_value} feet = ${feetToMeters()} meters`;
         volumeOperation.textContent = `${main_value} liters = ${litersToGallons()} gallons | ${main_value} gallons = ${gallonsToLiters()} liters`;
         massOperation.textContent = `${main_value} killos = ${killosToPounds()} pounds | ${main_value} pounds = ${poundsToKillos()} killos`;
+    }
+    else if (e.key === "Enter" && inputSection.value[0] === "-") {
+        errorMessage.textContent = "Please enter a positive number";
     }
 });
